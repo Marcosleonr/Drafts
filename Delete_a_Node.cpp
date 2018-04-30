@@ -27,6 +27,7 @@ Node* Delete(Node* head, int position){
 					previous = aux1;
 				}
 			}
+			n++;
 			
 		}	
 	}
