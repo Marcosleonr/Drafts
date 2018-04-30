@@ -9,7 +9,7 @@ Node* Delete(Node* head, int position){
 		ans = head->next;
 	}else{
 		
-		for(i=0;i<position+1;i++){
+		for(i=0;i<=position;i++){
 			if(i=0){
 				aux1 = head;
 				previous = head;
@@ -18,7 +18,7 @@ Node* Delete(Node* head, int position){
 				aux1 = aux1->next;
 				if(n==position){
 					if(aux1->next==NULL){
-						previous = NULL;
+						previous->next = NULL;
 					}else{
 						previous->next = aux1->next;
 					}
